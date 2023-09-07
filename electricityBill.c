@@ -11,6 +11,7 @@ int main()
     float amt, FAC_charge, total_amt;
     printf("Enter the previous meter reading: ");  scanf("%d",&a);
     printf("Enter the present meter reading: ");   scanf("%d",&b);
+   
     if(a > b)
     {
         printf("Invalid Input...\n\tPrevious reading cannot be greater than the present reading...");
@@ -25,10 +26,13 @@ int main()
         amt = (30 * 4) + (70 * 5.45) + ((b - a - 100) * 7);
     else
         amt = (30 * 4) + (70 * 5.45) + (100 *7) + ((b - a - 200) * 8.05);
+   
     FAC_charge = (amt * .22);
     total_amt = (amt) + (FAC_charge) + (amt * .04);
+   
     printf("Consumption in Units: %d kWh", (b - a));
     printf("\nFAC charge is %.2f", FAC_charge);
     printf("\nThe total amount to be paid is %.2f\n", total_amt);
+   
     return 0;
 }
