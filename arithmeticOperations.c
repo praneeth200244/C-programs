@@ -1,5 +1,5 @@
 /*  C program to accept two non-zero numbers and perform basic arithmetic operations
-    Name of the program:arithmeticOperations.c
+    Name of the program: arithmeticOperations.c
 */
 
 #include <stdio.h>
